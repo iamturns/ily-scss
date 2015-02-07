@@ -1,0 +1,39 @@
+// Basic usage
+// ============
+//
+// .icon-example:before {
+//   @include ily-icomoon($icomoon-example);
+// }
+//
+// Using base mixin to reduce CSS output
+// =====================================
+//
+// .icon {
+//   &:before {
+//     @include ily-icomoon-base;
+//   }
+//
+//   &--example-1:before {
+//     content: $icomoon-example-1;
+//   }
+//
+//   &--example-2:before {
+//     content: $icomoon-example-2;
+//   }
+// }
+
+@mixin ily-icomoon-base() {
+  @include ily-font-smoothing;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+@mixin ily-icomoon($content) {
+  @include ily-icomoon-base;
+  content: $content;
+}
