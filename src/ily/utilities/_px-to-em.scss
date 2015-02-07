@@ -1,0 +1,17 @@
+@function ily-px-to-em($value, $parent-pixels: null) {
+  $base-font-size: 16px !default;
+
+  @if unit($value) == em {
+    @return $value;
+  }
+
+  @if $parent-pixels == null {
+    $parent-pixels: $base-font-size;
+  }
+
+  $value: ily-strip-unit($value);
+  $parent-pixels: ily-strip-unit($parent-pixels);
+
+  @return $value / $parent-pixels * 1em;
+
+}

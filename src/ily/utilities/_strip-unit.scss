@@ -1,6 +1,3 @@
-// ily-strip-unit(12px) = 12
-// ily-strip-unit(1.2em) = 1.2
-
 @function ily-strip-unit($value) {
   @return $value / ($value * 0 + 1)
 }
