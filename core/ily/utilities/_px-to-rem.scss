@@ -1,0 +1,34 @@
+// Basic usage
+// ===========
+//
+// $base-font-size: 18px;
+//
+// body {
+//   font-size: $base-font-size;
+// }
+//
+// .example {
+//   @include ily-font-size-px-to-rem(16px);
+//
+//   padding-left: 20px; //fallback for browsers without rem support
+//   padding-left: ily-px-to-rem(20px);
+// }
+
+@function ily-px-to-rem($value) {
+  $base-font-size: 16px !default;
+
+  @if unit($value) == rem {
+    @return $value;
+  }
+
+  $value: strip-unit($value);
+  $base-font-size: strip-unit($base-font-size);
+
+  @return $value / $base-font-size * 1rem;
+
+}
+
+@mixin ily-font-size-px-to-rem($value) {
+  font-size: $value;
+  font-size: ily-px-to-rem($value);
+}
