@@ -24,7 +24,6 @@
 //     line-height: ily-px-to-em(12px, 8px);
 //   }
 // }
-//
 
 @function ily-px-to-em($value, $parent-pixels: null) {
   $base-font-size: 16px !default;
