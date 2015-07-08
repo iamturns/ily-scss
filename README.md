@@ -115,3 +115,14 @@ Icomoon
   }
 }
 ```
+
+Screen reader only
+------------------
+
+Element is hidden visually, but readable by screen readers
+
+```
+.example {
+  @include ily-screen-reader-only();
+}
+```
