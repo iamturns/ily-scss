@@ -1,0 +1,13 @@
+@mixin ily-animation-base() {
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+}
+
+@mixin ily-animation-in {
+  @include ily-animation-base();
+  animation-timing-function: ease-out;
+}
+
+@mixin ily-animation-out {
+  animation-timing-function: ease-in;
+}

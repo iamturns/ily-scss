@@ -3,9 +3,15 @@
  * https://github.com/turnbullm/ily-scss
  */
 
+@import "ily/vars/bp";
+@import "ily/vars/color";
+@import "ily/vars/font-weight";
+@import "ily/vars/z-index";
+
 @import "ily/utilities/strip-unit";
 @import "ily/utilities/px-to-em";
 @import "ily/utilities/px-to-rem";
 @import "ily/utilities/font-smoothing";
 @import "ily/utilities/icomoon";
 @import "ily/utilities/screen-reader-only";
+@import "ily/utilities/animation";
