@@ -192,30 +192,30 @@ Font weights
 
 Variable | Value
 --- | ---
-$font-weight-thin | 100;
-$font-weight-extra-light | 200;
-$font-weight-light | 300;
-$font-weight-normal | 400;
-$font-weight-medium | 500;
-$font-weight-semi-bold | 600;
-$font-weight-bold | 700;
-$font-weight-heavy | 800;
-$font-weight-black | 900;
+$font-weight-thin | 100
+$font-weight-extra-light | 200
+$font-weight-light | 300
+$font-weight-normal | 400
+$font-weight-medium | 500
+$font-weight-semi-bold | 600
+$font-weight-bold | 700
+$font-weight-heavy | 800
+$font-weight-black | 900
 
 Z Indexes
 ---------
 
 Variable | Value
 --- | ---
-$z-index-lowest | -3;
-$z-index-lower | -2;
-$z-index-low | -1;
-$z-index-standard | 0;
-$z-index-high | 1;
-$z-index-higher | 2;
-$z-index-highest | 3;
-$z-index-overlay | 4;
-$z-index-overlay-breakout | 5;
+$z-index-lowest | -3
+$z-index-lower | -2
+$z-index-low | -1
+$z-index-standard | 0
+$z-index-high | 1
+$z-index-higher | 2
+$z-index-highest | 3
+$z-index-overlay | 4
+$z-index-overlay-breakout | 5
 
 Style
 =====
@@ -234,7 +234,9 @@ Use if border box sizing is your default site-wide preference
 Global layout
 -------------
 
-Adds 100% height to `html` and `body` elements, a common tactic for websites containing full height elements
+Adds 100% height to `html` and `body` elements
+
+A common tactic for websites containing full height elements
 
 ```
 @import "ily/style/global-layout";
