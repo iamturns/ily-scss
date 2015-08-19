@@ -246,6 +246,33 @@ Element is hidden visually, but readable by screen readers
 }
 ```
 
+Scroll
+------
+
+Easily create scrollable elements
+
+### Installation
+
+```
+@import "ily/utilities/scroll";
+```
+
+### Example usage
+
+```
+.example-1 {
+  @import ily-scroll();
+}
+
+.example-2 {
+  @import ily-scroll-horizontal-only();
+}
+
+.example-3 {
+  @import ily-scroll-vertical-only();
+}
+```
+
 Strip unit
 ----------
 

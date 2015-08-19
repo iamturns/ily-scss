@@ -1,0 +1,15 @@
+@mixin ily-scroll() {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+@mixin ily-scroll-horizontal-only() {
+  @include ily-scroll();
+  overflow-y: hidden;
+}
+
+@mixin ily-scroll-vertical-only() {
+  @include ily-scroll();
+  overflow-x: hidden;
+}
