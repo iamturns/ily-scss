@@ -87,6 +87,8 @@ Icomoon
 
 Easily embed characters from fonts generated with [IcoMoon](https://icomoon.io/)
 
+Assumes the font family name is 'icomoon'
+
 ### Installation
 
 ```
@@ -100,8 +102,10 @@ Easily embed characters from fonts generated with [IcoMoon](https://icomoon.io/)
 ### Example usage
 
 ```
+$icon-icomoon-burger: 'x';
+
 .icon-example:before {
-  @include ily-icomoon($icomoon-example);
+  @include ily-icomoon($icomoon-burger);
 }
 ```
 
