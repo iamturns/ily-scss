@@ -105,7 +105,7 @@ Assumes the font family name is 'icomoon'
 $icon-icomoon-burger: 'x';
 
 .icon-example:before {
-  @include ily-icomoon($icomoon-burger);
+  @include ily-icomoon($icon-icomoon-burger);
 }
 ```
 
@@ -118,11 +118,11 @@ $icon-icomoon-burger: 'x';
   }
 
   &--example-1:before {
-    content: $icomoon-example-1;
+    content: $icon-icomoon-arrow-left;
   }
 
   &--example-2:before {
-    content: $icomoon-example-2;
+    content: $icon-icomoon-arrow-right;
   }
 }
 ```
@@ -263,7 +263,7 @@ Breakpoint values should be adjusted to match each particular design, rather tha
 
 Device dimension reference: http://www.mydevice.io/devices/
 
-Variable | Value | Comments
+Variable | Value |
 --- | --- | ---
 $bp-xxs | 360px | Galaxy S4 - S6
 $bp-xs | 375px | iPhone 6
@@ -346,6 +346,8 @@ $z-index-highest | 3
 $z-index-overlay | 4
 $z-index-overlay-breakout | 5
 
+### Installation
+
 ```
 @import "ily/vars/z-index";
 ```
@@ -360,7 +362,7 @@ Global border box
 
 Use if border box sizing is your default site-wide preference 
 
-This may cause issues with 3rd party widgets; see (box sizing utility)[#box-sizing]
+This may cause issues with 3rd party widgets; see [box sizing utility](#box-sizing)
 
 ### Installation
 
