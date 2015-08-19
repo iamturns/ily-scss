@@ -295,6 +295,25 @@ ily-strip-unit(1.2em) = 1.2
 $value: ily-strip-unit($value);
 ```
 
+Vertical align
+--------------
+
+Vertically align a block element within its parent
+
+### Installation
+
+```
+@import "ily/utilities/vertical-align";
+```
+
+### Example usage
+
+```
+.example {
+  @include ily-vertical-align();
+}
+```
+
 Variables
 =========
 
