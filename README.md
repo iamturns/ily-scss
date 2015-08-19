@@ -10,51 +10,135 @@ Installation
 @import 'ily';
 ```
 
+Alternatively, import individual utilities as shown below.
+
 Utilities
 =========
+
+Animation
+---------
+
+Sensible defaults for animations
+
+### Installation
+
+```
+@import "ily/utilities/animation";
+```
+
+### Example usage
+
+```
+.animation-fade-in {
+  @include ily-animation-in();
+  animation-name: fade-in;
+}
+
+.animation-fade-out {
+  @include ily-animation-out();
+  animation-name: fade-out;
+}
+```
+
+Box sizing
+----------
+
+If using global border box reset, this mixin will remove issues with 3rd party widgets (eg: Google Maps)
+
+### Installation
+
+```
+@import "ily/utilities/box-sizing";
+```
+
+### Example usage
+
+```
+.3rd-party-widget {
+  @include ily-border-box-reset();
+}
+```
 
 Font smoothing
 --------------
 
+### Installation
+
 ```
-.font-smoothing {
+@import "ily/utilities/font-smoothing";
+```
+
+### Example usage
+
+```
+.example {
   @include ily-font-smoothing();
 }
 
-.font-smoothing-disable {
+.example {
   @include ily-font-smoothing-disable();
 }
 ```
 
-Strip unit
-----------
+Icomoon
+-------
+
+Easily embed characters from fonts generated with (IcoMoon)[https://icomoon.io/]
+
+### Installation
 
 ```
-ily-strip-unit(12px) = 12
-ily-strip-unit(1.2em) = 1.2
+@import "ily/utilities/icomoon";
+```
+
+### Requirements
+
+- (Font smoothing utility)[#font-smoothing]
+
+### Example usage
+
+```
+.icon-example:before {
+  @include ily-icomoon($icomoon-example);
+}
+```
+
+#### Using base mixin to reduce CSS output
+
+```
+.icon {
+  &:before {
+    @include ily-icomoon-base();
+  }
+
+  &--example-1:before {
+    content: $icomoon-example-1;
+  }
+
+  &--example-2:before {
+    content: $icomoon-example-2;
+  }
+}
 ```
 
 Pixels to em
 ------------
 
-### Basic usage
+Convert pixels to em units
+
+### Installation
 
 ```
-.example {
-  font-size: ily-px-to-em(10px, 18px);
-  line-height: ily-px-to-em(18px, 10px);
-}
+@import "ily/utilities/px-to-em";
 ```
 
-### Base font size
+### Requirements
+
+- (Strip unit utility)[#strip-unit]
+
+### Example usage
 
 ```
-$base-font-size: 18px;
-
-body {
-  font-size: $base-font-size;
-}
-
 .example {
   font-size: ily-px-to-em(10px);
   line-height: ily-px-to-em(18px, 10px);
@@ -63,6 +147,20 @@ body {
     font-size: ily-px-to-em(8px, 10px);
     line-height: ily-px-to-em(12px, 8px);
   }
+}
+```
+
+### Base font size
+
+The default base font size is 16px
+
+This can be changed by altering the `$base-font-size` variable
+
+```
+$base-font-size: 18px;
+
+body {
+  font-size: $base-font-size;
 }
 ```
 
@@ -86,40 +184,18 @@ body {
 }
 ```
 
-Icomoon
--------
-
-### Basic usage
-
-```
-.icon-example:before {
-  @include ily-icomoon($icomoon-example);
-}
-```
-
-
-### Using base mixin to reduce CSS output
-
-```
-.icon {
-  &:before {
-    @include ily-icomoon-base();
-  }
-
-  &--example-1:before {
-    content: $icomoon-example-1;
-  }
-
-  &--example-2:before {
-    content: $icomoon-example-2;
-  }
-}
-```
-
 Screen reader only
 ------------------
 
 Element is hidden visually, but readable by screen readers
+
+### Installation
+
+```
+@import "ily/utilities/screen-reader-only";
+```
+
+### Example usage
 
 ```
 .example {
@@ -127,21 +203,26 @@ Element is hidden visually, but readable by screen readers
 }
 ```
 
-Animation
----------
+Strip unit
+----------
 
-Sensible defaults for animations
+Useful function for allowing mixins to accept *any* type of parameter
 
 ```
-.animation-fade-in {
-  @include ily-animation-in();
-  animation-name: fade-in;
-}
+ily-strip-unit(12px) = 12
+ily-strip-unit(1.2em) = 1.2
+```
 
-.animation-fade-out {
-  @include ily-animation-out();
-  animation-name: fade-out;
-}
+### Installation
+
+```
+@import "ily/utilities/strip-unit";
+```
+
+### Example usage
+
+```
+$value: ily-strip-unit($value);
 ```
 
 Variables
@@ -173,6 +254,12 @@ $bp-height-xs | min-height 665px | iPhone 6
 $bp-height-s | min-height 735px | iPhone 6 Plus
 $bp-height-m | min-height 1024px | Tablets
 
+### Installation
+
+```
+@import "ily/vars/bp";
+```
+
 Colors
 ------
 
@@ -187,8 +274,20 @@ $color-gray-dim | #696969
 $color-gray-light | #d3d3d3
 $color-white | #fff
 
+### Installation
+
+```
+@import "ily/vars/color";
+```
+
+### Example usage
+
+It's recommended to use the contents of this file within your own project as a starting point
+
 Font weights
 ------------
+
+Improve code readability
 
 Variable | Value
 --- | ---
@@ -202,8 +301,16 @@ $font-weight-bold | 700
 $font-weight-heavy | 800
 $font-weight-black | 900
 
+### Installation
+
+```
+@import "ily/vars/font-weight";
+```
+
 Z Indexes
 ---------
+
+Improve readability within code, and limit the usage (no `z-index: 99999`!)
 
 Variable | Value
 --- | ---
@@ -217,6 +324,10 @@ $z-index-highest | 3
 $z-index-overlay | 4
 $z-index-overlay-breakout | 5
 
+```
+@import "ily/vars/z-index";
+```
+
 Style
 =====
 
@@ -226,6 +337,10 @@ Global border box
 -----------------
 
 Use if border box sizing is your default site-wide preference 
+
+This may cause issues with 3rd party widgets; see [box sizing utility](#box-sizing)
+
+### Installation
 
 ```
 @import "ily/style/global-border-box";
@@ -237,6 +352,8 @@ Global layout
 Adds 100% height to `html` and `body` elements
 
 A common tactic for websites containing full height elements
+
+### Installation
 
 ```
 @import "ily/style/global-layout";

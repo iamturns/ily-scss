@@ -1,3 +1,5 @@
+//Requires ily/utilities/font-smoothing
+
 @mixin ily-icomoon-base() {
   @include ily-font-smoothing;
   font-family: 'icomoon';
