@@ -6,11 +6,13 @@ I Love You SCSS
 Installation
 ============
 
+Install all utilities;
+
 ```
 @import 'ily';
 ```
 
-Alternatively, import individual utilities as shown below.
+Alternatively, import individual utilities as shown below
 
 Utilities
 =========
@@ -83,7 +85,7 @@ Font smoothing
 Icomoon
 -------
 
-Easily embed characters from fonts generated with (IcoMoon)[https://icomoon.io/]
+Easily embed characters from fonts generated with [IcoMoon](https://icomoon.io/)
 
 ### Installation
 
@@ -93,7 +95,7 @@ Easily embed characters from fonts generated with (IcoMoon)[https://icomoon.io/]
 
 ### Requirements
 
-- (Font smoothing utility)[#font-smoothing]
+- [Font smoothing utility](#font-smoothing)
 
 ### Example usage
 
@@ -124,7 +126,7 @@ Easily embed characters from fonts generated with (IcoMoon)[https://icomoon.io/]
 Pixels to em
 ------------
 
-Convert pixels to em units
+Convert pixel units to em units
 
 ### Installation
 
@@ -134,7 +136,7 @@ Convert pixels to em units
 
 ### Requirements
 
-- (Strip unit utility)[#strip-unit]
+- [Strip unit utility](#strip-unit)
 
 ### Example usage
 
@@ -167,7 +169,23 @@ body {
 Pixels to rem
 -------------
 
-Notice the fallback for browsers without rem support
+Convert pixel units to rem units
+
+### Installation
+
+```
+@import "ily/utilities/px-to-rem";
+```
+
+### Requirements
+
+- [Strip unit utility](#strip-unit)
+
+### Example usage
+
+Usage is very similar to the [pixels to em utility](#pixels-to-em)
+
+Notice the fallback for browsers without rem support (IE8 and below)
 
 ```
 $base-font-size: 18px;
@@ -338,7 +356,7 @@ Global border box
 
 Use if border box sizing is your default site-wide preference 
 
-This may cause issues with 3rd party widgets; see [box sizing utility](#box-sizing)
+This may cause issues with 3rd party widgets; see (box sizing utility)[#box-sizing]
 
 ### Installation
 
