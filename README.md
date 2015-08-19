@@ -222,7 +222,7 @@ Useful if using [normalize.css](https://necolas.github.io/normalize.css/), and w
 ### Example usage
 
 ```
-button {
+.example {
   @include ily-reset();
 }
 ```
