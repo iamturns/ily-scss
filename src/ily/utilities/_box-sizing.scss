@@ -1,0 +1,8 @@
+@mixin ily-box-sizing-reset() {
+  &,
+  *,
+  *:before,
+  *:after {
+    box-sizing: content-box;
+  }
+}
