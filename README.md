@@ -295,6 +295,52 @@ ily-strip-unit(1.2em) = 1.2
 $value: ily-strip-unit($value);
 ```
 
+Tap highlight
+-------------
+
+Touch devices outline taps with a gray box
+
+Disable the effect with this mixin, and handle active states yourself
+
+### Installation
+
+```
+@import "ily/utilities/tap-highlight";
+```
+
+### Example usage
+
+```
+.example {
+  @include ily-tap-highlight-disable();
+
+  &:active {
+    //...
+  }
+}
+```
+
+### Global usage
+
+```
+a,
+button,
+input,
+label,
+select,
+textarea {
+  @include ily-tap-highlight-disable();
+}
+```
+
+### Javascript
+
+This javascript code will ensure the `:active` selector is fired across all mobile devices
+
+```
+document.addEventListener("touchstart", function(){}, true);
+```
+
 Vertical align
 --------------
 
