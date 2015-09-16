@@ -7,6 +7,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [Unreleased][unreleased]
 ------------------------
 
+[0.1.3] - 2015-09-16
+---------------------
+
+### Fixed
+
+- Bower package did not include all necessary files
+- Readme formatting issues
+
 [0.1.2] - 2015-09-16
 --------------------
 
@@ -75,7 +83,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Font smoothing mixin
 - Icomoon mixin
 
-[unreleased]: https://github.com/turnbullm/ily-scss/compare/v0.1.2...HEAD
+[unreleased]: https://github.com/turnbullm/ily-scss/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/turnbullm/ily-scss/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/turnbullm/ily-scss/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/turnbullm/ily-scss/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/turnbullm/ily-scss/compare/v0.0.3...v0.1.0
