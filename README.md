@@ -6,6 +6,16 @@ I Love You SCSS
 Installation
 ============
 
+### Fetch code
+
+From bower;
+
+```
+bower install ily-scss
+```
+
+Import
+
 Install all utilities;
 
 ```

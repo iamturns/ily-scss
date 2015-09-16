@@ -1,0 +1,25 @@
+{
+  "name": "ily-scss",
+  "description": "I love you SCSS",
+  "keywords": [
+    "ily",
+    "scss",
+    "love"
+  ],
+  "license": "ISC",
+  "authors": [
+    "Matthew Turnbull <turnbullm@gmail.com> (http://turnbullm.com)"
+  ],
+  "main": "src/_ily.scss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/turnbullm/ily-scss.git"
+  },
+  "ignore": [
+    "*",
+    "!/bower.json",
+    "!/LICENSE",
+    "!/README.md",
+    "!/src/*"
+  ]
+}
