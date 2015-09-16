@@ -11,8 +11,8 @@ Publish
 
 ```
 git add -A
-git commit -m "Prepare version 0.0.1"
+git commit -m "Version 0.0.1"
 git push
-git tag -a v0.0.1 -m "Version 0.0.1"
+git tag -a v0.0.1 -m "Tag version 0.0.1"
 git push --tags 
 ```
