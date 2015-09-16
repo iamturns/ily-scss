@@ -20,6 +20,6 @@
     "!/bower.json",
     "!/LICENSE",
     "!/README.md",
-    "!/src/*"
+    "!/src/**/*"
   ]
 }
