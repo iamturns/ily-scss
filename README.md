@@ -6,21 +6,19 @@ I Love You SCSS
 Installation
 ============
 
-Fetch files
------------
+Download
+--------
 
-Some options:
-
-### 1. Bower
+### Bower
 
 ```
 bower install ily-scss
 ```
 
-### 2. GitHub
+### GitHub
 
-- Download [zip file](https://github.com/turnbullm/ily-scss/archive/v0.1.3.zip)
-- Download [tar.gz file](https://github.com/turnbullm/ily-scss/archive/v0.1.3.tar.gz)
+- Download [zip](https://github.com/turnbullm/ily-scss/archive/v0.1.3.zip) file
+- Download [tar.gz](https://github.com/turnbullm/ily-scss/archive/v0.1.3.tar.gz) file
 
 Import into your SCSS
 ---------------------
