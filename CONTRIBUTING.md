@@ -17,7 +17,6 @@ Publish
 ```
 git add -A
 git commit -m "v0.0.1"
-git push
 git tag -a v0.0.1 -m "v0.0.1"
-git push --tags 
+git push origin master v0.0.1
 ```

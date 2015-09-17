@@ -513,3 +513,23 @@ A common tactic for websites containing full height elements
 ```
 @import "ily/style/global-layout";
 ```
+
+Changelog
+=========
+
+See [`CHANGELOG.md`](CHANGELOG.md) file
+
+Contributing
+============
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) file
+
+Author
+======
+
+[Matthew Turnbull](http://turnbullm.com) <[turnbullm@gmail.com](mailto:turnbullm@gmail.com)>
+
+License
+=======
+
+Open sourced under the [MIT license](http://turnbullm.mit-license.org/).
