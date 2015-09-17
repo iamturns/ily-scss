@@ -17,8 +17,8 @@ bower install ily-scss
 
 ### GitHub
 
-- Download [zip](https://github.com/turnbullm/ily-scss/archive/v0.1.3.zip) file
-- Download [tar.gz](https://github.com/turnbullm/ily-scss/archive/v0.1.3.tar.gz) file
+- Download [zip](https://github.com/turnbullm/ily-scss/archive/v0.1.4.zip) file
+- Download [tar.gz](https://github.com/turnbullm/ily-scss/archive/v0.1.4.tar.gz) file
 
 Import into your SCSS
 ---------------------
