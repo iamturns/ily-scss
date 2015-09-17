@@ -17,9 +17,10 @@ Some options:
 bower install ily-scss
 ```
 
-### 2. Github
+### 2. GitHub
 
-[Zip file](https://github.com/turnbullm/ily-scss/archive/master.zip)
+- Download [zip file](https://github.com/turnbullm/ily-scss/archive/v0.1.3.zip)
+- Download [tar.gz file](https://github.com/turnbullm/ily-scss/archive/v0.1.3.tar.gz)
 
 Import into your SCSS
 ---------------------

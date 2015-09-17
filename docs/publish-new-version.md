@@ -9,6 +9,7 @@ Publish a new version
     - Change second `[unreleased]` block to version number and release date
     - Create new version link at bottom of file
 - Update version number in `src/_ily.scss`
+- Update version number in GitHub download links within `README.md` file
 - Commit changes, see example:
 
 ```
