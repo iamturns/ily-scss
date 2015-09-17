@@ -1,8 +1,5 @@
-I Love You SCSS - Contributing
-==============================
-
-Publish
--------
+Publish a new version
+=====================
 
 - Follow `[unreleased]` link at bottom of `CHANGELOG.md`
 - Summarise changes at top of `CHANGELOG.md` (refer to http://keepachangelog.com)

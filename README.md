@@ -514,15 +514,15 @@ A common tactic for websites containing full height elements
 @import "ily/style/global-layout";
 ```
 
+More documentation
+==================
+
+- [Publish new version](docs/publish-new-version.md)
+
 Changelog
 =========
 
 See [`CHANGELOG.md`](CHANGELOG.md) file
-
-Contributing
-============
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) file
 
 Author
 ======
