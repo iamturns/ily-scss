@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 [Unreleased]
@@ -10,6 +10,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Editor config file
+
+### Changed
+
+- Change log formatting improved
 
 [0.1.4] - 2015-09-17
 --------------------
