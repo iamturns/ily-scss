@@ -7,6 +7,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [Unreleased]
 ------------
 
+### Added
+
+- Editor config file
+
 [0.1.4] - 2015-09-17
 --------------------
 
