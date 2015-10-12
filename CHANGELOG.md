@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Editor config file
+- Git attributes file
 
 ### Changed
 
@@ -63,13 +64,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Animation mixins
 - Variables
-    - Breakpoints
-    - Colors
-    - Font weights
-    - Z indexes
+  - Breakpoints
+  - Colors
+  - Font weights
+  - Z indexes
 - Style
-    - Global border box
-    - Global layout
+  - Global border box
+  - Global layout
 - Breakpoint variables
 
 [0.0.3] - 2015-07-09
