@@ -8,12 +8,12 @@
   ],
   "license": "ISC",
   "authors": [
-    "Matthew Turnbull <turnbullm@gmail.com> (http://turnbullm.com)"
+    "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)"
   ],
   "main": "src/_ily.scss",
   "repository": {
     "type": "git",
-    "url": "git://github.com/turnbullm/ily-scss.git"
+    "url": "git://github.com/iamturns/ily-scss.git"
   },
   "ignore": [
     "*",

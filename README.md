@@ -17,8 +17,8 @@ bower install ily-scss
 
 ### GitHub
 
-- Download [zip](https://github.com/turnbullm/ily-scss/archive/v0.1.4.zip) file
-- Download [tar.gz](https://github.com/turnbullm/ily-scss/archive/v0.1.4.tar.gz) file
+- Download [zip](https://github.com/iamturns/ily-scss/archive/v0.1.4.zip) file
+- Download [tar.gz](https://github.com/iamturns/ily-scss/archive/v0.1.4.tar.gz) file
 
 Import into your SCSS
 ---------------------
@@ -526,9 +526,9 @@ See [`CHANGELOG.md`](CHANGELOG.md) file
 Author
 ======
 
-[Matthew Turnbull](http://turnbullm.com) <[turnbullm@gmail.com](mailto:turnbullm@gmail.com)>
+[Matt Turnbull](https://iamturns.com) <[matt@iamturns.com](mailto:matt@iamturns.com)>
 
 License
 =======
 
-Open sourced under the [MIT license](http://turnbullm.mit-license.org/).
+Open sourced under the MIT license.
